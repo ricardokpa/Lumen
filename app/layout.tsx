@@ -31,7 +31,7 @@ const navLinks = [{ label: 'Work Together', href: '/work' }];
 const contactLinks = [
   { label: 'WhatsApp', href: 'https://wa.me/34633851467' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jessicawolff/' },
-  { label: 'Email', href: 'mailto:hello@jesswolff.com' },
+  { label: 'Email', href: 'mailto:hello@jesswolff.co' },
 ];
 
 export default function RootLayout({

@@ -13,17 +13,17 @@ const bioParagraphs = [
 
 const contactLinks = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jessicawolff/' },
-  { label: 'Email', href: 'mailto:hello@jesswolff.com' },
+  { label: 'Email', href: 'mailto:hello@jesswolff.co' },
   { label: 'WhatsApp', href: 'https://wa.me/34633851467' },
 ];
 
 const logos = [
-  { src: '/logos/charles-marlow.png', alt: 'Charles Marlow' },
-  { src: '/logos/jetblue.png', alt: 'JetBlue' },
-  { src: '/logos/virgin-voyages.png', alt: 'Virgin Voyages' },
-  { src: '/logos/starwood.png', alt: 'Starwood Hotels and Resorts' },
-  { src: '/logos/mount-sinai.png', alt: 'Mount Sinai' },
-  { src: '/logos/miraval.png', alt: 'Miraval' },
+  // { src: '/logos/charles-marlow.png', alt: 'Charles Marlow' },
+  { src: '/images/brand2.png', alt: 'JetBlue' },
+  { src: '/images/brand3.png', alt: 'Virgin Voyages' },
+  { src: '/images/brand4.png', alt: 'Starwood Hotels and Resorts' },
+  { src: '/images/brand1.png', alt: 'Mount Sinai' },
+  // { src: '/logos/miraval.png', alt: 'Miraval' },
 ];
 
 const testimonials = [

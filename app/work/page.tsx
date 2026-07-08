@@ -21,7 +21,7 @@ const jsonLd = {
   name: 'Jessica Wolff Huerta - Brand Strategist',
   url: 'https://jesswolff.co',
   telephone: '+34633851467',
-  email: 'hello@jesswolff.com',
+  email: 'hello@jesswolff.co',
   address: {
     '@type': 'PostalAddress',
     addressCountry: 'ES',
@@ -73,7 +73,7 @@ export default function WorkTogetherPage() {
 
       <section className="section-work-hero bg-brown">
         <div className="container grid">
-          <WorkTabs tabs={tabs} formAction="https://formsubmit.co/hello@jesswolff.com" />
+          <WorkTabs tabs={tabs} formAction="https://formsubmit.co/hello@jesswolff.co" />
         </div>
       </section>
 
