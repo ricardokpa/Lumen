@@ -190,12 +190,15 @@ section {
 }
 
 .header-inner {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gap);
   align-items: center;
 }
 
 .logo-text {
+  grid-column: 2 / 7;
+  justify-self: start;
   font-family: var(--font-display);
   font-weight: 600;
   text-transform: uppercase;
@@ -205,6 +208,8 @@ section {
 }
 
 .nav-links {
+  grid-column: 8 / 13;
+  justify-self: end;
   display: flex;
   gap: 3rem;
 }
@@ -228,6 +233,8 @@ section {
    Mobile Navigation
    ========================================================================== */
 .hamburger-menu {
+  grid-column: 12 / 13;
+  justify-self: end;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -742,9 +749,17 @@ body.menu-is-open .hamburger-menu span {
   :root {
     --section-padding: 5rem 0;
   }
-  .header-inner { flex-direction: row; justify-content: space-between; gap: 0; text-align: left; }
+  .header-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    text-align: left;
+  }
+  .logo-text { grid-column: unset; }
   .nav-links { display: none; }
-  .hamburger-menu { display: flex; }
+  .hamburger-menu { grid-column: unset; display: flex; }
   .section-bio { padding-top: 10rem; }
   .testimonial-item { grid-column: 1 / -1; }
   .brands-box { padding: 3rem 1.5rem; }
