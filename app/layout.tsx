@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { Archivo_Narrow, Azeret_Mono } from 'next/font/google';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -25,7 +26,6 @@ export const metadata: Metadata = {
   description: 'Brand strategist con más de 20 años trabajando con marcas de hospitalidad en todo el mundo.',
 };
 
-// Contenido de navegación y contacto reutilizado por Header y Footer
 const navLinks = [{ label: 'Work Together', href: '/work' }];
 
 const contactLinks = [
@@ -34,6 +34,8 @@ const contactLinks = [
   { label: 'Email', href: 'mailto:hello@jesswolff.co' },
 ];
 
+const GA_MEASUREMENT_ID = 'G-8VLNECWF9T';
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -41,6 +43,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${archivoNarrow.variable} ${azeretMono.variable}`}>
+      <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
+      </head>
       <body>
         <Header
           logoText="Jessica Wolff Huerta"
