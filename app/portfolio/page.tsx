@@ -116,7 +116,9 @@ function SectionHeader(props: {
         {kicker && <div className="pf-meta">{kicker}</div>}
         <h2 className="pf-title">{title}</h2>
         {place && <div className="pf-meta">{place}</div>}
-        <div className="pf-roles">{roles}</div>
+        <div className="pf-roles" style={{ whiteSpace: "pre-line" }}>
+          {roles}
+        </div>
       </div>
       <div>
         {challengeLabel && <div className="pf-meta">{challengeLabel}</div>}
@@ -242,8 +244,10 @@ export default async function PortfolioPage() {
             kicker="Airline"
             title="JetBlue"
             place="NYC"
-            roles="Product Concept · Creative Direction · Styling · Partnership Dev"
-            challenge="Create a brand and branded experience from the ground up, then refresh the entire airline's uniforms to reflect the brands evolution and trajectory."
+            roles={
+              "Product Concept · Creative Direction · Styling\nPartnership Development · Naming"
+            }
+            challenge="Create a contrarian brand concept, visual identity and experience for a new business class product from the ground up. Design, align and deliver the airline's first uniform refresh company-wide."
           />
 
           <Row
@@ -463,7 +467,6 @@ export default async function PortfolioPage() {
 
         <footer className="pf-footer">
           <img src={`${IMG}/signature.png`} alt="" />
-          <p>All work copyright Jessica Wolff Huerta</p>
         </footer>
       </div>
     </main>

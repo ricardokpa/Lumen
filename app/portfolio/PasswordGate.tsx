@@ -9,9 +9,6 @@ export default function PasswordGate() {
   return (
     <main className="pf pf-gate">
       <div className="pf-gate-box">
-        <p className="pf-meta">Private portfolio</p>
-        <h1 className="pf-gate-title">Enter password</h1>
-
         <form action={formAction} className="pf-gate-form">
           <label className="pf-meta" htmlFor="pf-password">
             Password

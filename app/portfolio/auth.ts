@@ -2,7 +2,7 @@ import { createHash, timingSafeEqual } from "crypto";
 
 export const COOKIE_NAME = "pf_auth";
 
-const getPassword = () => process.env.PORTFOLIO_PASSWORD ?? "charlesmarlow";
+const getPassword = () => process.env.PORTFOLIO_PASSWORD ?? "wunder";
 const getSecret = () => process.env.PORTFOLIO_SECRET ?? "cambia-este-secreto";
 
 const sha = (value: string) => createHash("sha256").update(value).digest();
