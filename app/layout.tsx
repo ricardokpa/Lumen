@@ -26,8 +26,10 @@ export const metadata: Metadata = {
   description: 'Brand strategist con más de 20 años trabajando con marcas de hospitalidad en todo el mundo.',
 };
 
-const navLinks = [{ label: 'Work Together', href: '/work' }];
-
+const navLinks = [
+  { label: 'Portfolio', href: '/portfolio' },
+  { label: 'Work Together', href: '/work', arrow: true },
+];
 const contactLinks = [
   { label: 'WhatsApp', href: 'https://wa.me/34633851467' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jessicawolff/' },

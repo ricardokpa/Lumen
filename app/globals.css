@@ -774,3 +774,24 @@ body.menu-is-open .hamburger-menu span {
   .ethos-text { grid-column: 1 / -1; text-align: left; }
   .modal-content { padding: 3rem 1.5rem; }
 }
+
+.nav-link {
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav-link.is-active::after {
+  content: '';
+  position: absolute;
+  left: -0.9rem;
+  right: -0.9rem;
+  bottom: -0.35rem;
+  height: 2px;
+  background-color: var(--color-text);
+}
+
+.nav-arrow {
+  display: inline-block;
+  margin-left: 0.4rem;
+  font-size: 0.75em;
+}
