@@ -170,18 +170,34 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+
   .pf-row {
-    flex-wrap: wrap;
-    gap: 1.5rem 4%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .pf-header + .pf-row {
     margin-top: 3rem;
   }
+
   .pf-item {
-    width: 48%;
+    width: 100%;
     margin-top: 0;
     margin-left: 0;
   }
-  .pf-item--full {
+
+  .pf-script {
     width: 100%;
+    margin-top: 2.5rem;
+  }
+
+  .pf-section {
+    padding-top: 3rem;
+    margin-top: 3rem;
   }
 }
 

@@ -214,10 +214,9 @@ export default async function PortfolioPage() {
             center
             items={[
               {
-                type: "video",
-                src: `${IMG}/charles-video-2.mp4`,
+                src: `${IMG}/video-placeholder.png`,
+                alt: "Somewhere To Be website",
                 w: 63,
-                ratio: "16 / 9",
               },
             ]}
           />
